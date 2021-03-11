@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
 
 export default function MyApp({ Component, pageProps }) {
-  const router = useROuter()
+  const router = useRouter()
   useEffect(() => {
     const handleRouteChage = url => {
       if (localtion.host === 'alpacat.com') {
