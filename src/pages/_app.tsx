@@ -8,7 +8,7 @@ import * as gtag from '../lib/gtag'
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter()
   useEffect(() => {
-    const handleRouteChage = url => {
+    const handleRouteChange = url => {
       if (location.host === 'alpacat.com') {
         gtag.pageview(url)
       }
