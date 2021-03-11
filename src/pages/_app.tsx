@@ -9,7 +9,7 @@ export default function MyApp({ Component, pageProps }) {
   const router = useRouter()
   useEffect(() => {
     const handleRouteChage = url => {
-      if (localtion.host === 'alpacat.com') {
+      if (location.host === 'alpacat.com') {
         gtag.pageview(url)
       }
     }
